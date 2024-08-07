@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicos solda</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+</div>
+<h4>Pesquisa de Produtos</h4>
+<form>
+    <label for="servico">Selecione o tipo de serviço:</label>
+    <select id="servico" name="servico">
+        <option value="">Selecione um serviço</option>
+        <option value="mig-mag">Soldagem MIG/MAG</option>
+        <option value="tig">Soldagem TIG</option>
+        <option value="eletrodo-revestido">Soldagem por Eletrodo Revestido</option>
+        <option value="reparos-manutencao">Reparos e Manutenção de Estruturas Metálicas</option>
+    </select>
+
+    <label for="numero-ordem">Número da Ordem de Serviço:</label>
+    <input type="number" id="numero-ordem" name="numero-ordem">
+
+    <label for="ano-servico">Ano do Serviço:</label>
+    <select id="ano-servico" name="ano-servico">
+        <option value="">Selecione o ano</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+    </select>
+
+    <button type="submit">Pesquisar</button>
+</form>
+
+<div id="crud-operations">
+    <h4>Adicionar Trabalho Feito</h4>
+    <form id="add-trabalho-form">
+        <label for="add-servico">Tipo de Serviço:</label>
+        <select id="add-servico" name="add-servico">
+            <option value="">Selecione um serviço</option>
+            <option value="mig-mag">Soldagem MIG/MAG</option>
+            <option value="tig">Soldagem TIG</option>
+            <option value="eletrodo-revestido">Soldagem por Eletrodo Revestido</option>
+            <option value="reparos-manutencao">Reparos e Manutenção de Estruturas Metálicas</option>
+        </select>
+
+        <label for="add-numero-ordem">Número da Ordem de Serviço:</label>
+        <input type="number" id="add-numero-ordem" name="add-numero-ordem">
+
+        <label for="add-ano-servico">Ano do Serviço:</label>
+        <select id="add-ano-servico" name="add-ano-servico">
+            <option value="">Selecione o ano</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+        </select>
+
+        <button type="button" onclick="adicionarTrabalho()">Adicionar</button>
+    </form>
+
+    <h4>Consultar Trabalhos Feitos</h4>
+    <form id="consultar-trabalho-form">
+        <label for="consultar-numero-ordem">Número da Ordem de Serviço:</label>
+        <input type="number" id="consultar-numero-ordem" name="consultar-numero-ordem">
+        <button type="button" onclick="consultarTrabalho()">Consultar</button>
+    </form>
+    <div id="resultado-consulta"></div>
+
+    <h4>Excluir Trabalho Feito</h4>
+    <form id="excluir-trabalho-form">
+        <label for="excluir-numero-ordem">Número da Ordem de Serviço:</label>
+        <input type="number" id="excluir-numero-ordem" name="excluir-numero-ordem">
+        <button type="button" onclick="excluirTrabalho()">Excluir</button>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+    </form>
+</form>
+<button onclick="window.location='index.html'">Voltar para Home</button>
+</div>
